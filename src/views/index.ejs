@@ -8,14 +8,10 @@
     <link rel="icon" href="img/LOGO-COMPUTER_GAMER.png" sizes="32x32">
 </head>
 <body>
-    <%- include('partials/navigation')%>
-
-    <div class="carousel-container">
-        <div class="carousel">
-            <!-- Imágenes dinámicas con EJS -->
-            <% images.forEach((image, index) => { %>
-                <img src="<%= image.src %>" class="carousel-image <%= index === 0 ? 'active' : '' %>" alt="<%= image.alt %>">
-            <% }) %>
+    
+       
+            <%- include('partials/navigation')%>
+       
         </div>
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
