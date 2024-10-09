@@ -5,32 +5,95 @@
     box-sizing: border-box;
 }
 
-header{
-    position: relative;
-    width: 100%;
+header {
+    display: flex;
     align-items: center;
+    
+    width: 100%;
     height: 10em;
     background: linear-gradient(to bottom, #808080, #000000);
-    justify-content: space-between;
+    padding: 0 1em; /* Añade un poco de espacio a los lados */
 }
-header img{
-    display:flex;
-    padding: 0.5em;
+
+header img {
     width: 9em;
     height: 9em;
 }
-nav{
-    position:absolute;
-}
-nav li{
-    list-style-type:none;
 
+nav {
+    display: flex;
+    align-items: center; /* Centra el menú verticalmente */
+    margin-left: 15em; /* Empuja el menú a la derecha del logo */
 }
-nav ol{
-    display: flex;  
-    gap: 5em;
+
+nav ol {
+    display: flex;
+    gap: 5em; /* Ajusta el espacio entre los enlaces */
 }
-nav a{
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
     text-decoration: none;
     color: white;
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+}
+
+/* Carrusel CSS */
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    height: 400px;
+}
+
+.carousel {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
