@@ -58,6 +58,7 @@ footer{
     margin-top: auto; 
 }
 
+
 /* Carrusel CSS */
 .carousel-container {
     position: relative;
@@ -65,6 +66,7 @@ footer{
     margin: 1% 2%;
     overflow: hidden;
     height: 500px;
+    gap:10px
 }
 
 .carousel {
@@ -169,5 +171,39 @@ footer{
 
     .carousel-container {
         height: 400px; /* Ajustar el tamaño del carrusel para tabletas */
+    }
+}
+/* Iconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    object-fit: contain; /* Asegura que todas las imágenes encajen */
+    padding: 0; /* Asegúrate de que no haya relleno */
+    margin: 0; /* Quitar margen adicional */
+}
+.social-icons small {
+    margin-right: 10px;
+}
+
+  /* Efecto hover */
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+  /* Diseño responsivo para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .social-icons {
+      flex-direction: column; /* Los iconos se apilan en columnas */
+    }
+    
+.social-icons a img {
+    margin-bottom: 10px;
     }
 }
