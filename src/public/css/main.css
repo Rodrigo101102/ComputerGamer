@@ -61,17 +61,7 @@ body,html {
     margin-left: 15px;
     font-size: 1.2em;
   }
-  
-  .about-us {
-    padding: 40px;
-    background-color: #ffffff;
-  }
-  
-  .breadcrumb {
-    font-size: 0.9em;
-    color: #666;
-  }
-  
+
   h1 {
     margin-top: 10px;
     font-size: 2.5em;
@@ -81,99 +71,6 @@ body,html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .text {
-    max-width: 50%;
-    color: #ffffff;
-    background-color: #333;
-    padding: 40px;
-  }
-  
-  .text h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-  }
-  
-  .text p {
-    margin-bottom: 15px;
-  }
-  
-  .image img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  /* Shop.com Section */
-  .shop-com {
-    padding: 40px;
-    background-color: #ffffff;
-  }
-  
-  .shop-com .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .shop-com .text {
-    max-width: 40%;
-  }
-  
-  .shop-com .text h2 {
-    display: flex;
-    align-items: center;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-  }
-  
-  .shop-com .text h2 .icon {
-    width: 30px;
-    margin-right: 10px;
-  }
-  
-  .shop-com .image img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-  
-  /* Safe Hands Section */
-  .safe-hands {
-    padding: 40px;
-    background-color: #333;
-    color: #ffffff;
-  }
-  
-  .safe-hands .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .safe-hands .text {
-    max-width: 40%;
-  }
-  
-  .safe-hands .text h2 {
-    display: flex;
-    align-items: center;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-  }
-  
-  .safe-hands .text h2 .heart-icon {
-    margin-right: 10px;
-  }
-  
-  .safe-hands .text p {
-    margin-bottom: 15px;
-  }
-  
-  .safe-hands .image img {
-    max-width: 100%;
-    border-radius: 5px;
   }
   
   /* Testimonials Section */
