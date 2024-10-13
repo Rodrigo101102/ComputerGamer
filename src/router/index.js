@@ -4,7 +4,7 @@ const router= Router()
 router.get('/', (req, res) => {
     // Array de imágenes
     const images = [
-        { src: 'img/image1.png', alt: 'Imagen 1' },
+        { src: 'img/home_1.png', alt: 'Imagen 1' },
         { src: 'img/image2.png', alt: 'Imagen 2' },
         { src: 'img/image3.png', alt: 'Imagen 3' }
     ];
