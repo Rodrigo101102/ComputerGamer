@@ -16,6 +16,23 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(6px);
+    z-index: -1;
 }
 
 .formulario {
@@ -45,6 +62,7 @@ form {
 }
 
 input[type="text"],
+input[type="nombre"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -55,6 +73,7 @@ input[type="password"] {
 }
 
 input[type="text"]:focus,
+input[type="nombre"]:focus,
 input[type="password"]:focus {
     border-color: #ffffff;
     outline: none;
