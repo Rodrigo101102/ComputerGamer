@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/img/login/fondo2.jpg');
+    background-image: url('/img/login/Imagen2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,12 +31,13 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    filter: blur(6px);
+    filter: blur(3px);
     z-index: -1;
 }
 
 .formulario {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro más transparente */
+    border: 2px solid #F5C85C; /* Borde amarillo */
     padding: 45px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -53,6 +54,7 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 .logo {
     position: absolute;
     top: 10px;
@@ -87,16 +89,15 @@ label {
     margin-bottom: 20px;
     font-size: 14px;
     text-align: right;
-    
 }
+
 .recordar a {
     color: #F5C85C;
     text-decoration: none;
-
 }
+
 .recordar a:hover {
     text-decoration: underline;
-
 }
 
 input[type="submit"] {
@@ -125,6 +126,7 @@ input[type="submit"]:hover {
     color: #F5C85C;
     text-decoration: none;
 }
+
 .registrarse b {
     color: #fbfdff;
     text-decoration: none;
@@ -143,14 +145,16 @@ input[type="submit"]:hover {
 }
 
 .volver-home a {
-    background: #000; 
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro con un poco de transparencia */
     color: #F5C85C;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px; /* Aumentar el redondeo de las esquinas */
+    border: 2px solid #F5C85C; /* Borde amarillo */
     text-decoration: none;
     font-size: 18px; 
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, border 0.3s ease; /* Agregar transición para el borde */
 }
+
 
 .volver-home a:hover {
     background: #222; 
