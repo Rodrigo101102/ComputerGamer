@@ -1,6 +1,7 @@
-body,html {
+body, html {
   font-family: Arial, sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +10,13 @@ body,html {
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color:  #c4bbbb;
   color: #333;
 }
 
 .navbar {
-  background-color: #000;
-  padding: 15px 30px;
+  background: linear-gradient(to bottom, #0D0D0D, #B8860B);
+    padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,86 +39,19 @@ body {
 .navbar ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
   font-size: 20px;
 }
 
 footer {
-  background: linear-gradient(to bottom, #808080, #000000); /* Fondo en gradiente */
-  color: #ffffff;
-  padding: 40px 20px;
-  font-size: 0.9em;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
-}
-
-.footer-section {
-  flex: 1;
-  padding: 10px 20px;
-  min-width: 250px; /* Asegura buena visualización en dispositivos pequeños */
-  text-align: left;
-}
-
-.footer-section h4 {
-  font-size: 1.2em;
-  color: #FFD700; /* Color dorado para títulos */
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  color: #E0E0E0;
-  margin: 5px 0;
-}
-
-.footer .social-icons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer .social-icons a img {
-  width: 30px; /* Tamaño ajustado para iconos */
-  transition: transform 0.3s ease;
-}
-
-.footer .social-icons a img:hover {
-  transform: scale(1.1); /* Efecto de hover para iconos */
-}
-
-.footer-bottom {
+  background: linear-gradient(to bottom, #808080, #000000);
+  color: white; 
   text-align: center;
-  padding: 15px 0;
-  border-top: 1px solid #555;
-  margin-top: 20px;
-  font-size: 0.85em;
-  color: #FFD700; /* Texto dorado */
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto; 
 }
 
-.footer-bottom p {
-  margin: 0;
-}
 
-#ubicacion {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #f4f4f4;
-}
-
-.map-container {
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 iframe {
   width: 100%;
@@ -127,19 +61,17 @@ iframe {
 
 .titulo_home {
   text-align: center;
-  margin-top: 1em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 50px;
+  margin-top: 0.5em;
+  font-family: sans-serif;
+  font-size: 45px;
 }
 
 /* Carrusel CSS */
 .carousel-container {
   position: relative;
   max-width: 100%;
-  margin: 1% 2%;
   overflow: hidden;
-  height: 500px;
-  gap: 10px;
+  height: 550px;
 }
 
 .carousel {
@@ -171,6 +103,19 @@ iframe {
   padding: 16px;
   color: white;
   font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 .deals-btn {
@@ -286,4 +231,216 @@ h1 {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #ffffff;
+}
+
+.footer .social-icons a img {
+  width: 25px;
+}
+
+/* Sección Zona Gamer */
+.zona-gamer {
+  text-align: center;
+  margin-top: 5px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+ h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.gamer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gamer-item {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.gamer-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: #333333;
+}
+
+.gamer-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gamer-item h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  margin: 0;
+}
+
+.gamer-item p {
+  font-size: 1.2em;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+/* Sección Los Más Vendidos */
+/* Sección Los Más Vendidos */
+.seccion-mas-vendidos {
+  margin-top: 2px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+
+.contenedor-mas-vendidos {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carrusel-mas-vendidos {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content; /* Para que el contenedor pueda tener el ancho de todos los elementos */
+}
+
+.elemento-mas-vendido {
+  flex: 0 0 270px; /* Tamaño fijo de cada producto */
+  margin: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+  min-height: 350px; /* Asegura una altura consistente para cada tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que la estructura de la tarjeta esté equilibrada */
+}
+
+.contenedor-imagen {
+  background-color: #fff;
+  padding: 1em;
+  text-align: center; /* Centrar la imagen */
+  margin-bottom: 1px; /* Espacio inferior entre la imagen y el contenido de texto */
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Ajustar la altura máxima para mantener el tamaño consistente */
+  object-fit: contain; /* Mantener la imagen dentro de su contenedor sin recortes */
+}
+
+.contenedor-texto {
+  padding-top: 2px; /* Asegura un espacio constante entre la imagen y el texto */
+}
+
+.categoria_producto {
+  text-align: left;
+  font-size: 0.8em;
+  color: #333333;
+  margin: 0.1em 0;
+   /* Asegura que todas las categorías tengan el mismo espacio */
+}
+
+.nombre-producto {
+  text-align: left;
+  font-size: 1em;
+  color: #050505;
+  margin: 0.2em 0;
+   /* Establece un mínimo para el nombre del producto */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limita el nombre a 2 líneas */
+  -webkit-box-orient: vertical;
+}
+
+.precio-producto {
+  text-align: left;
+  font-size: 1.5em;
+  color: #e30505;
+  margin: 0.2em 0;
+  font-weight: bold;
+  min-height: 30px; /* Asegura que todas las etiquetas de precio se alineen correctamente */
+}
+.elemento-mas-vendido img {
+  width: 100%;
+  height: auto;
+}
+
+.flecha {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background:  #B8860B;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha.izquierda {
+  left: 10px;
+}
+
+.flecha.derecha {
+  right: 10px;
 }
