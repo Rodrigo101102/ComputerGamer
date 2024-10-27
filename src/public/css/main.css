@@ -10,13 +10,13 @@ body, html {
 }
 
 body {
-  background-color:  #c4bbbb;
+  background-color: #ffffff;
   color: #333;
 }
 
 .navbar {
   background: linear-gradient(to bottom, #0D0D0D, #B8860B);
-    padding: 15px 30px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,14 +44,66 @@ body {
 
 footer {
   background: linear-gradient(to bottom, #808080, #000000);
-  color: white; 
-  text-align: center;
-  padding: 20px 0;
+  color: white;
+  padding: 40px 20px;
   width: 100%;
-  margin-top: auto; 
+  text-align: center;
 }
 
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
 
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  padding: 15px;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  color: #E0E0E0;
+  margin: 5px 0;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.footer .social-icons a img {
+  width: 25px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  font-size: 0.85em;
+  color: #FFD700;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
 
 iframe {
   width: 100%;
@@ -234,11 +286,13 @@ h1 {
 }
 
 /* Footer */
-.footer {
-  background-color: #333;
-  color: #ffffff;
+footer {
+  background: linear-gradient(to bottom, #333333, #111111);
+  color: #FFD700; /* Color dorado claro */
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 .footer p {
@@ -330,14 +384,12 @@ h1 {
 }
 
 /* Sección Los Más Vendidos */
-/* Sección Los Más Vendidos */
 .seccion-mas-vendidos {
   margin-top: 2px;
   text-align: center;
   padding: 20px;
   background-color: #fff;
 }
-
 
 .contenedor-mas-vendidos {
   position: relative;
@@ -390,7 +442,6 @@ h1 {
   font-size: 0.8em;
   color: #333333;
   margin: 0.1em 0;
-   /* Asegura que todas las categorías tengan el mismo espacio */
 }
 
 .nombre-producto {
@@ -398,7 +449,6 @@ h1 {
   font-size: 1em;
   color: #050505;
   margin: 0.2em 0;
-   /* Establece un mínimo para el nombre del producto */
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -414,6 +464,7 @@ h1 {
   font-weight: bold;
   min-height: 30px; /* Asegura que todas las etiquetas de precio se alineen correctamente */
 }
+
 .elemento-mas-vendido img {
   width: 100%;
   height: auto;

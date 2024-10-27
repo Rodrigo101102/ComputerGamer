@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #E0E0E0; /* Texto gris claro */
+  color: #ffffff; /* Texto gris claro */
 }
 
 /* Navegación */
@@ -26,7 +26,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 500;
@@ -84,7 +84,7 @@ h1 {
 }
 
 .shop-text {
-  color: #E0E0E0;
+  color: #fffbfb;
 }
 
 /* Títulos */
@@ -101,7 +101,7 @@ h1 {
   font-size: 1em;
   line-height: 1.6;
   font-weight: 300;
-  color: #E0E0E0; /* Texto gris claro */
+  color: #fffbfb; /* Texto gris claro */
   max-width: 700px;
   margin: auto;
   text-align: justify;
