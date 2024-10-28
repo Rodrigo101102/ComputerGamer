@@ -144,7 +144,7 @@ function moverMasVendidos(direccion) {
 
     // Calcular el desplazamiento y aplicarlo
     const desplazamiento = indiceProductoActual * -anchoProducto;
-    contenedorCarrusel.style.transform = translateX(${desplazamiento}px);
+    contenedorCarrusel.style.transform = `translateX(${desplazamiento}px)`;  
     contenedorCarrusel.style.transition = 'transform 0.5s ease'; // Suavizar el movimiento
 }
 
